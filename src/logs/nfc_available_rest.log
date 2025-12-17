@@ -1,0 +1,62 @@
+2025-12-10 21:34:24 [ERROR] nfc_available_rest.auth: Token expiré lors de la vérification du token
+Traceback (most recent call last):
+  File "/home/freebox/nfcAvailable_Rest/src/nfc_available_rest/auth.py", line 60, in vérifier_token
+    payload = pyjwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jwt.py", line 167, in decode_complete
+    self._validate_claims(
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jwt.py", line 262, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jwt.py", line 363, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+2025-12-10 21:51:22 [ERROR] nfc_available_rest.auth: Token invalide ou décodage échoué lors de la vérification du token
+Traceback (most recent call last):
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jws.py", line 270, in _load
+    header_segment, payload_segment = signing_input.split(b".", 1)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/freebox/nfcAvailable_Rest/src/nfc_available_rest/auth.py", line 60, in vérifier_token
+    payload = pyjwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jwt.py", line 222, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jwt.py", line 156, in decode_complete
+    decoded = api_jws.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jws.py", line 209, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+                                                ^^^^^^^^^^^^^^^
+  File "/home/freebox/nfcAvailable_Rest/.venv/lib/python3.12/site-packages/jwt/api_jws.py", line 272, in _load
+    raise DecodeError("Not enough segments") from err
+jwt.exceptions.DecodeError: Not enough segments
+2025-12-10 22:01:58 [INFO] nfc_available_rest.app: Vérification du tag 'erer' par l'utilisateur Matthieu
+2025-12-10 22:04:04 [INFO] nfc_available_rest.app: Vérification du tag 'velo' par l'utilisateur Matthieu
+2025-12-10 22:05:07 [INFO] nfc_available_rest.app: Vérification du tag 'velo' par l'utilisateur Matthieu
+2025-12-10 22:05:26 [INFO] nfc_available_rest.app: Vérification du tag '782638726387efa87676ef' par l'utilisateur Matthieu
+2025-12-10 22:18:03 [INFO] nfc_available_rest.app: Vérification du tag '782638726387efa87676ef' par l'utilisateur Matthieu
+2025-12-10 22:19:10 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 22:45:20 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 22:53:31 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 22:55:11 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 22:56:28 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 22:58:27 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 23:00:00 [INFO] nfc_available_rest.database: ✅ Le fichier 'db/nfc_available.db' existe.
+2025-12-10 23:00:20 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 23:01:24 [INFO] nfc_available_rest.database: ❌ Le fichier 'db/nfc_available.db' n'existe PAS.
+2025-12-10 23:01:30 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-10 23:01:40 [INFO] nfc_available_rest.database: Base de données initialisée: db/nfc_available.db
+2025-12-10 23:01:55 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 23:02:16 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-10 23:02:28 [INFO] root: Le tag a été ajouté
+2025-12-10 23:02:32 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-10 23:02:45 [INFO] nfc_available_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-10 23:02:58 [INFO] root: Le tag existe déjà, rien à faire

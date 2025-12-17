@@ -1,0 +1,1 @@
+"""Module pour vérifier les tags NFC - code déplacé dans app.py"""

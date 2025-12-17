@@ -1,0 +1,14 @@
+[project]
+name = "nfcavailable_rest"
+version = "0.1.0"
+description = "FastAPI REST service for NFC availability"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.95",
+    "uvicorn[standard]>=0.22",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
