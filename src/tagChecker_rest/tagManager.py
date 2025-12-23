@@ -4,6 +4,7 @@ import logging
 from .database import (
     add_tag,
     get_connection,
+    remove_tag,
     init_db,
     tag_exists,
     verifier_fichier_existe
@@ -31,3 +32,19 @@ class TagManager:
         else :
             logging.info("Le tag existe déjà, rien à faire")
         return True
+
+    def supprimer_tag(self, tag_a_supprimer: str) -> bool:
+        """Supprime un tag de la base de donnée."""
+        if tag_exists(tag_a_supprimer) is True :
+            logging.info("Le tag existe, on peut le supprimer")
+            if remove_tag(tag_a_supprimer) is False :
+                logging.error(f"Le tag {tag_a_supprimer} n'a pas pu être supprimé")
+                return False
+            logging.info("Le tag a été supprimé")
+        else :
+            logging.info("Le tag n'existe pas, rien à faire")
+        return True
+    
+    def existance_tag(self, tag_a_verifier: str) -> bool:
+        """Vérifie l'existence d'un tag dans la base de donnée."""
+        return tag_exists(tag_a_verifier)

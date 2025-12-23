@@ -1,7 +1,7 @@
 [project]
-name = "nfcavailable_rest"
+name = "tagchecker_rest"
 version = "0.1.0"
-description = "FastAPI REST service for NFC availability"
+description = "FastAPI REST service for NFC tag checking"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

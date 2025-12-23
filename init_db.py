@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 # Ajouter le répertoire src au chemin Python
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 
-from nfc_available_rest.database import init_db
+from tagChecker_rest.database import init_db
 
 if __name__ == "__main__":
     init_db()

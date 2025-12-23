@@ -1,0 +1,1286 @@
+2025-12-18 23:21:03 [INFO] tagChecker_rest.database: ❌ Le fichier 'db\tagChecker.db' n'existe PAS.
+2025-12-18 23:21:03 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-18 23:21:03 [INFO] tagChecker_rest.database: Base de données initialisée: db\tagChecker.db
+2025-12-18 23:21:03 [INFO] httpx: HTTP Request: GET http://test/health "HTTP/1.1 404 Not Found"
+2025-12-18 23:21:04 [INFO] httpx: HTTP Request: POST http://test/login "HTTP/1.1 404 Not Found"
+2025-12-18 23:21:04 [INFO] httpx: HTTP Request: POST http://test/login "HTTP/1.1 404 Not Found"
+2025-12-18 23:21:04 [INFO] httpx: HTTP Request: POST http://test/login "HTTP/1.1 404 Not Found"
+2025-12-18 23:21:04 [INFO] httpx: HTTP Request: POST http://test/login "HTTP/1.1 404 Not Found"
+2025-12-18 23:21:04 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-0\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-18 23:21:04 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "c:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-18 23:21:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-0\test_add_and_remove_tag_4e56560\db\tagChecker.db
+2025-12-18 23:21:10 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag '4e5656545654': le tag existe déjà
+Traceback (most recent call last):
+  File "c:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-18 23:23:39 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-18 23:23:39 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-18 23:23:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-18 23:23:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-18 23:23:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-18 23:23:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-18 23:23:39 [INFO] httpx: HTTP Request: GET http://test/v1/checkTag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-18 23:23:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-1\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-18 23:23:40 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-18 23:23:46 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-1\test_add_and_remove_tag_4e56560\db\tagChecker.db
+2025-12-18 23:23:46 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag '4e5656545654': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-19 23:10:33 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-19 23:18:47 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:18:51 [INFO] tagChecker_rest.app: Reponse
+2025-12-19 23:18:51 [INFO] tagChecker_rest.app: 200
+2025-12-19 23:18:51 [INFO] tagChecker_rest.app: TokenExtrait
+2025-12-19 23:22:44 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:22:45 [INFO] tagChecker_rest.app: Reponse
+2025-12-19 23:22:45 [INFO] tagChecker_rest.app: 200
+2025-12-19 23:22:45 [INFO] tagChecker_rest.app: TokenExtrait
+2025-12-19 23:24:16 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:25:06 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:31:48 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:31:49 [INFO] tagChecker_rest.app: Reponse
+2025-12-19 23:31:49 [INFO] tagChecker_rest.app: 200
+2025-12-19 23:32:17 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:32:20 [INFO] tagChecker_rest.app: Reponse
+2025-12-19 23:33:08 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:33:11 [INFO] tagChecker_rest.app: Reponse
+2025-12-19 23:33:11 [INFO] tagChecker_rest.app: 200
+2025-12-19 23:33:12 [INFO] tagChecker_rest.app: TokenExtrait
+2025-12-19 23:34:35 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:35:21 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:35:22 [INFO] tagChecker_rest.app: Reponse
+2025-12-19 23:35:23 [INFO] tagChecker_rest.app: 200
+2025-12-19 23:35:23 [INFO] tagChecker_rest.app: TokenExtrait
+2025-12-19 23:43:40 [INFO] tagChecker_rest.app: Envoi_de_la_requete_de_login
+2025-12-19 23:43:40 [INFO] tagChecker_rest.app: Reponse
+2025-12-19 23:43:40 [INFO] tagChecker_rest.app: 200
+2025-12-19 23:43:40 [INFO] tagChecker_rest.app: TokenExtrait
+2025-12-19 23:43:40 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:40 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:41 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:41 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:41 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:41 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:41 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:42 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:42 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:42 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:45 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:46 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:46 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:46 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:46 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:47 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:47 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:47 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:47 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:48 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:48 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:48 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:48 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:49 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:49 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:49 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:49 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:49 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:49 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:49 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:50 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:50 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:50 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:50 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:50 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:51 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:51 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:51 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:51 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:52 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:52 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:52 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:55 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:56 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:56 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:56 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:56 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:56 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:57 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:57 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:57 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:57 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:58 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:58 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:58 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:58 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:58 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:58 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:58 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:43:59 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:43:59 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:43:59 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:43:59 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:00 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:00 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:00 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:00 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:03 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:03 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:04 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:04 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:04 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:04 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:04 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:05 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:05 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:05 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:05 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:05 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:06 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:06 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:06 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:06 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:07 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:07 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:07 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:07 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:08 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:08 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:08 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:08 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:09 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:09 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:09 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:09 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:10 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:10 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:10 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:10 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:10 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:10 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:10 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:11 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:11 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:11 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:11 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:12 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:12 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:12 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:12 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:15 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:16 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:16 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:16 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:16 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:17 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:17 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:17 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:17 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:18 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:19 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:19 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:19 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:19 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:20 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:20 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:20 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:20 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:21 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:21 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:21 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:22 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:22 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:23 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:23 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:23 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:23 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:23 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:23 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:24 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:24 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:24 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:24 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:24 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:25 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:25 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:25 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:25 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:26 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:26 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:26 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:26 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:27 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:27 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:27 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:27 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:28 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:28 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:28 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:28 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:28 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:34 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:34 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:35 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:38 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:38 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:38 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:38 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:38 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:39 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:42 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:42 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:42 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:43 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:43 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:43 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:43 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:43 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:44 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:44 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:44 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:44 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:44 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:44 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:45 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:45 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:45 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:45 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:46 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:46 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:46 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:46 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:47 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:47 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:47 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:47 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:48 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:48 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:48 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:48 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:48 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:49 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:49 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:49 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:49 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:49 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:49 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:50 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:50 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:50 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:50 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:50 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:51 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:51 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:51 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:51 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:52 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:52 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:52 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:52 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:53 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:53 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:53 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:53 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:53 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:53 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:54 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:54 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:54 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:54 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:54 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:54 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:55 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:55 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:55 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:55 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:56 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:56 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:56 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:56 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:57 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:57 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:57 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:57 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:58 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:58 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:58 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:58 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:58 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:58 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:58 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:59 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:44:59 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:44:59 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:44:59 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:44:59 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:00 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:01 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:01 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:01 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:01 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:01 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:02 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:02 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:02 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:02 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:02 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:02 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:03 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:03 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:03 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:03 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:04 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:04 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:04 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:04 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:05 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:05 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:05 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:05 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:06 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:06 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:06 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:06 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:07 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:07 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:07 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:07 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:07 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:08 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:08 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:08 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:08 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:08 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:08 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:08 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:09 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:09 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:09 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:09 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:10 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:10 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:10 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:10 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:11 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:11 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:11 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:11 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:12 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:12 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:12 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:12 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:12 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:12 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:12 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:13 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:13 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:13 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:13 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:14 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:14 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:14 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:14 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:14 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:15 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:15 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:15 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:15 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:16 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:16 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:16 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:16 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:17 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:17 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:17 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:17 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:17 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:18 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:18 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:18 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:18 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:18 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:18 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:18 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:19 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:19 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:19 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:19 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:20 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:20 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:20 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:20 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:21 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:21 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:21 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:21 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:22 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:22 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:22 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:22 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:22 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:23 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:23 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:23 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:23 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:23 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:23 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:23 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:24 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:24 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:24 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:24 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:25 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:25 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:25 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:25 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:26 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:26 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:26 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:26 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:27 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:27 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:27 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:27 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:27 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:28 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:28 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:28 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:28 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:28 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:28 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:28 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:29 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:29 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:29 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:29 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:30 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:30 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:30 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:30 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:31 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:31 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:31 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:31 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:31 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:31 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:32 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:32 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:32 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:35 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:35 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:38 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:39 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:39 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:39 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:39 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:39 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:39 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:39 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:40 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:40 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:40 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:40 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:40 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:41 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:41 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:41 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:41 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:42 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:42 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:42 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:42 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:43 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:43 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:43 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:43 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:43 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:43 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:44 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:44 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:44 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:44 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:44 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:44 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:45 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:45 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:45 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:45 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:45 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:46 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:46 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:46 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:46 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:46 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:46 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:46 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:47 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:47 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:47 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:50 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:51 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:51 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:51 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:51 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:52 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:52 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:52 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:52 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:52 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:53 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:53 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:53 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:53 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:53 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:53 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:54 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:54 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:54 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:54 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:54 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:55 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:55 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:55 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:55 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:56 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:56 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:56 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:56 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:57 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:57 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:57 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:57 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:57 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:58 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:58 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:58 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:58 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:58 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:58 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:58 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:45:59 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:45:59 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:45:59 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:45:59 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:00 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:00 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:00 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:00 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:03 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:07 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:07 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:07 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:11 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:11 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:11 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:11 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:11 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:12 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:12 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:12 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:12 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:12 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:13 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:13 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:13 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:13 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:13 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:13 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:14 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:14 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:14 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:14 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:15 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:15 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:15 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:15 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:15 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:16 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:16 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:16 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:16 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:16 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:16 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:16 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:17 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:17 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:17 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:17 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:18 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:18 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:18 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:18 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:18 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:18 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:19 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:19 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:19 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:19 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:19 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:19 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:20 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:20 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:20 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:20 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:21 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:21 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:21 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:21 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:22 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:22 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:22 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:22 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:22 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:23 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:23 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:23 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:23 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:23 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:24 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:24 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:24 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:24 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:24 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:24 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:25 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:25 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:25 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:25 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:26 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:26 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:26 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:26 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:26 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:27 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:27 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:27 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:27 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:27 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:27 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:28 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:28 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:28 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:28 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:28 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:29 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:29 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:29 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:29 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:35 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:35 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:38 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:38 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:39 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:39 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:39 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:39 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:40 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:45 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:45 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:46 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:46 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:48 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:48 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:49 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:49 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:49 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:49 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:49 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:50 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:50 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:50 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:50 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:51 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:51 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:51 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:51 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:52 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:52 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:52 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:52 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:53 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:53 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:53 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:53 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:53 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:54 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:54 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:54 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:55 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:55 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:55 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:55 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:56 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:56 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-19 23:46:56 [INFO] tagChecker_rest.app: Check_Wg
+2025-12-19 23:46:56 [INFO] tagChecker_rest.app: Before_Delay
+2025-12-19 23:46:57 [INFO] tagChecker_rest.app: After_Delay
+2025-12-19 23:46:57 [INFO] tagChecker_rest.app: Check_Wifi
+2025-12-20 00:11:51 [INFO] tagChecker_rest.app: Vérification du tag 'e6527327a5454f5454' par l'utilisateur Matthieu
+2025-12-20 00:11:57 [INFO] tagChecker_rest.app: Vérification du tag 'd64908' par l'utilisateur Matthieu
+2025-12-20 00:11:58 [INFO] tagChecker_rest.app: Vérification du tag '564c08' par l'utilisateur Matthieu
+2025-12-20 00:12:22 [INFO] tagChecker_rest.app: Vérification du tag 'd04e08' par l'utilisateur Matthieu
+2025-12-20 00:12:26 [INFO] tagChecker_rest.app: Vérification du tag '7fda08' par l'utilisateur Matthieu
+2025-12-20 00:12:28 [INFO] tagChecker_rest.app: Vérification du tag '292008' par l'utilisateur Matthieu
+2025-12-20 00:12:42 [INFO] tagChecker_rest.app: Vérification du tag 'c1ba08' par l'utilisateur Matthieu
+2025-12-20 00:12:46 [INFO] tagChecker_rest.app: Vérification du tag 'f6ac08' par l'utilisateur Matthieu
+2025-12-20 00:12:47 [INFO] tagChecker_rest.app: Vérification du tag '64f108' par l'utilisateur Matthieu
+2025-12-20 00:12:49 [INFO] tagChecker_rest.app: Vérification du tag '1d9808' par l'utilisateur Matthieu
+2025-12-20 00:12:50 [INFO] tagChecker_rest.app: Vérification du tag '13e008' par l'utilisateur Matthieu
+2025-12-20 00:12:53 [INFO] tagChecker_rest.app: Vérification du tag 'a29608' par l'utilisateur Matthieu
+2025-12-20 00:13:31 [INFO] tagChecker_rest.app: Vérification du tag '6c21f208' par l'utilisateur Matthieu
+2025-12-20 00:13:35 [INFO] tagChecker_rest.app: Vérification du tag '44473708' par l'utilisateur Matthieu
+2025-12-20 00:13:37 [INFO] tagChecker_rest.app: Vérification du tag '2d488608' par l'utilisateur Matthieu
+2025-12-20 00:13:38 [INFO] tagChecker_rest.app: Vérification du tag 'c4d2f08' par l'utilisateur Matthieu
+2025-12-20 00:13:40 [INFO] tagChecker_rest.app: Vérification du tag '3211508' par l'utilisateur Matthieu
+2025-12-20 00:13:41 [INFO] tagChecker_rest.app: Vérification du tag '3b404408' par l'utilisateur Matthieu
+2025-12-20 00:13:43 [INFO] tagChecker_rest.app: Vérification du tag '8e7ee908' par l'utilisateur Matthieu
+2025-12-20 00:22:15 [INFO] tagChecker_rest.app: Vérification du tag 'e6527327a5454f5454' par l'utilisateur Matthieu
+2025-12-20 00:24:24 [INFO] tagChecker_rest.app: Vérification du tag 'e6527327a5454f5454' par l'utilisateur Matthieu
+2025-12-20 00:24:32 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:24:56 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:25:05 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:25:07 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:25:13 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:27:14 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:27:18 [INFO] tagChecker_rest.app: Vérification du tag '80dd08' par l'utilisateur Matthieu
+2025-12-20 00:27:22 [INFO] tagChecker_rest.app: Vérification du tag 'c2c008' par l'utilisateur Matthieu
+2025-12-20 00:27:28 [INFO] tagChecker_rest.app: Vérification du tag 'f7a608' par l'utilisateur Matthieu
+2025-12-20 00:27:30 [INFO] tagChecker_rest.app: Vérification du tag 'fe2e08' par l'utilisateur Matthieu
+2025-12-20 00:27:40 [INFO] tagChecker_rest.app: Vérification du tag '36ac08' par l'utilisateur Matthieu
+2025-12-20 00:27:46 [INFO] tagChecker_rest.app: Vérification du tag '786508' par l'utilisateur Matthieu
+2025-12-20 00:27:48 [INFO] tagChecker_rest.app: Vérification du tag '825908' par l'utilisateur Matthieu
+2025-12-20 00:27:51 [INFO] tagChecker_rest.app: Vérification du tag '3bbf08' par l'utilisateur Matthieu
+2025-12-20 00:27:52 [INFO] tagChecker_rest.app: Vérification du tag '3f6808' par l'utilisateur Matthieu
+2025-12-20 00:27:54 [INFO] tagChecker_rest.app: Vérification du tag '8ba008' par l'utilisateur Matthieu
+2025-12-20 00:27:59 [INFO] tagChecker_rest.app: Vérification du tag 'a4a408' par l'utilisateur Matthieu
+2025-12-20 00:28:04 [INFO] tagChecker_rest.app: Vérification du tag '76108' par l'utilisateur Matthieu
+2025-12-20 00:28:52 [INFO] tagChecker_rest.app: Vérification du tag '8a5108' par l'utilisateur Matthieu
+2025-12-20 00:28:54 [INFO] tagChecker_rest.app: Vérification du tag 'd0ad08' par l'utilisateur Matthieu
+2025-12-20 00:28:56 [INFO] tagChecker_rest.app: Vérification du tag '6ccd08' par l'utilisateur Matthieu
+2025-12-20 00:28:56 [INFO] tagChecker_rest.app: Vérification du tag 'f1a08' par l'utilisateur Matthieu
+2025-12-20 00:28:59 [INFO] tagChecker_rest.app: Vérification du tag '660f08' par l'utilisateur Matthieu
+2025-12-20 00:29:01 [INFO] tagChecker_rest.app: Vérification du tag 'a4de08' par l'utilisateur Matthieu
+2025-12-20 00:29:05 [INFO] tagChecker_rest.app: Vérification du tag '878908' par l'utilisateur Matthieu
+2025-12-20 00:30:20 [INFO] tagChecker_rest.app: Vérification du tag 'e6527327a5454f5454' par l'utilisateur Matthieu
+2025-12-20 00:31:23 [INFO] tagChecker_rest.app: Vérification du tag 'e6527327a5454f5454' par l'utilisateur Matthieu
+2025-12-20 00:31:35 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:31:37 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:31:43 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:31:48 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:31:53 [INFO] tagChecker_rest.app: Vérification du tag '98b604' par l'utilisateur Matthieu
+2025-12-20 00:31:57 [INFO] tagChecker_rest.app: Vérification du tag '800608' par l'utilisateur Matthieu
+2025-12-20 00:31:59 [INFO] tagChecker_rest.app: Vérification du tag '442608' par l'utilisateur Matthieu
+2025-12-20 00:32:04 [INFO] tagChecker_rest.app: Vérification du tag '431208' par l'utilisateur Matthieu
+2025-12-20 00:32:05 [INFO] tagChecker_rest.app: Vérification du tag '88ab08' par l'utilisateur Matthieu
+2025-12-23 22:26:58 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:26:58 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-23 22:26:58 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:26:58 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-3\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:26:58 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:26:58 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-3\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-23 22:26:58 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:26:58 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:26:58 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:26:58 [INFO] root: Le tag a été ajouté
+2025-12-23 22:26:58 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:26:58 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-3\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:26:58 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:26:58 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-3\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-23 22:26:58 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:26:59 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:26:59 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:26:59 [INFO] root: Le tag a été ajouté
+2025-12-23 22:26:59 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:26:59 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-3\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:26:59 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:26:59 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-3\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-23 22:26:59 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:26:59 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:26:59 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:26:59 [INFO] root: Le tag a été ajouté
+2025-12-23 22:26:59 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:26:59 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:26:59 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:26:59 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:28:56 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:28:56 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:28:57 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:28:57 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:28:57 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:28:57 [INFO] root: Le tag a été ajouté
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:28:57 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:28:57 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:28:57 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:28:57 [INFO] root: Le tag a été ajouté
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:28:57 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:28:57 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:28:57 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:28:57 [INFO] root: Le tag a été ajouté
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:28:57 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:28:57 [INFO] httpx: HTTP Request: GET http://test/v1/checkTag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:28:57 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-23 22:28:57 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-23 22:29:03 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_add_and_remove_tag_4e56560\db\tagChecker.db
+2025-12-23 22:29:03 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag '4e5656545654': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-23 22:29:09 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:09 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:09 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db
+2025-12-23 22:29:09 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:09 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:09 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:09 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:09 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db
+2025-12-23 22:29:09 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:09 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:09 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_nouveau_test_0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:09 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:09 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_nouveau_test_0\db\tagChecker.db
+2025-12-23 22:29:09 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:09 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:09 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_existant_dupl0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:09 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_existant_dupl0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_existant_anot0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_existant_anot0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_echec_inserti0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_echec_inserti0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [ERROR] root: Le tag failing_tag n'a pas pu être ajouté
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_inexis0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_inexis0\db\tagChecker.db' existe.
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_exista0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_plusieurs_tags0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_plusieurs_tags0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_vide0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_vide0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_avec_caracter0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_ajouter_tag_avec_caracter0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_logging_ajouter_tag_nouve0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_logging_ajouter_tag_nouve0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_logging_ajouter_tag_exist0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:29:10 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:29:10 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-4\test_logging_ajouter_tag_exist0\db\tagChecker.db
+2025-12-23 22:29:10 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:29:10 [INFO] root: Le tag a été ajouté
+2025-12-23 22:29:10 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:37 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:34:37 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:37 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:37 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:34:37 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:37 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:37 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:34:37 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:37 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:34:37 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:34:37 [INFO] httpx: HTTP Request: GET http://test/v1/check_tag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:34:37 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-23 22:34:37 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-23 22:34:43 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_add_and_remove_tag_4e56560\db\tagChecker.db
+2025-12-23 22:34:43 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag '4e5656545654': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_nouveau_test_0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_nouveau_test_0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_existant_dupl0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_existant_dupl0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_existant_anot0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_existant_anot0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_echec_inserti0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_echec_inserti0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [ERROR] root: Le tag failing_tag n'a pas pu être ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_inexis0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_inexis0\db\tagChecker.db' existe.
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_exista0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_plusieurs_tags0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_plusieurs_tags0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_vide0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_vide0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_avec_caracter0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_ajouter_tag_avec_caracter0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_logging_ajouter_tag_nouve0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_logging_ajouter_tag_nouve0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_logging_ajouter_tag_exist0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:34:50 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:34:50 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-5\test_logging_ajouter_tag_exist0\db\tagChecker.db
+2025-12-23 22:34:50 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:34:50 [INFO] root: Le tag a été ajouté
+2025-12-23 22:34:50 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:21 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:35:21 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:21 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:21 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:35:21 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:21 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:21 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:35:21 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:21 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:35:21 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:35:21 [INFO] httpx: HTTP Request: GET http://test/v1/check_tag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:35:21 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-23 22:35:21 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-23 22:35:28 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_add_and_remove_tag_4e56560\db\tagChecker.db
+2025-12-23 22:35:28 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag '4e5656545654': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_nouveau_test_0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_nouveau_test_0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_existant_dupl0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_existant_dupl0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_existant_anot0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_existant_anot0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_echec_inserti0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_echec_inserti0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [ERROR] root: Le tag failing_tag n'a pas pu être ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_inexis0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_inexis0\db\tagChecker.db' existe.
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_exista0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_plusieurs_tags0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_plusieurs_tags0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_vide0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_vide0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_avec_caracter0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_ajouter_tag_avec_caracter0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_logging_ajouter_tag_nouve0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_logging_ajouter_tag_nouve0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_logging_ajouter_tag_exist0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:35:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:35:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-6\test_logging_ajouter_tag_exist0\db\tagChecker.db
+2025-12-23 22:35:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:35:34 [INFO] root: Le tag a été ajouté
+2025-12-23 22:35:34 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-7\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:39:05 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-7\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:39:05 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:39:05 [INFO] root: Le tag a été ajouté
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-7\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:39:05 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-7\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:39:05 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:39:05 [INFO] root: Le tag a été ajouté
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-7\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:39:05 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-7\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:39:05 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:39:05 [INFO] root: Le tag a été ajouté
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:39:05 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:39:05 [INFO] httpx: HTTP Request: GET http://test/v1/check_tag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:39:05 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-7\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-23 22:39:05 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-23 22:46:28 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:46:28 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:53:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:55:49 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:56:05 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:56:05 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:56:05 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: GET http://test/v1/check_tag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-23 22:56:05 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-14\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:56:05 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:56:05 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-14\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:56:05 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:56:05 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:56:05 [INFO] root: Le tag a été ajouté
+2025-12-23 22:56:05 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:56:06 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-14\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:56:06 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:56:06 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-14\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-23 22:56:06 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:56:06 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:56:06 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:56:06 [INFO] root: Le tag a été ajouté
+2025-12-23 22:56:06 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:56:06 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-14\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-23 22:56:06 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-23 22:56:06 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-14\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-23 22:56:06 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-23 22:56:06 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:56:06 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-23 22:56:06 [INFO] root: Le tag a été ajouté
+2025-12-23 22:56:06 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 22:56:06 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-23 22:56:06 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-23 22:56:06 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"

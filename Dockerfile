@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 ENV PYTHONPATH=/app/src
 
-CMD ["uvicorn", "nfc_available_rest.app:app", "--host", "0.0.0.0", "--port", "6543"]
+CMD ["uvicorn", "tagChecker_rest.app:app", "--host", "0.0.0.0", "--port", "6543"]

@@ -38,6 +38,10 @@ class Health(BaseModel):
 async def health():
     return {"status": "ok"}
 
+@router_v1.get("/log")
+async def log_info(text: str = Query(..., description="Le tag à vérifier")):
+    logger.info(f"{text}")
+    return {"status": "ok"}
 
 @router_v1.post("/login", response_model=Token)
 async def login(request: LoginRequest):
@@ -65,18 +69,18 @@ async def login(request: LoginRequest):
     )
     return {"access_token": access_token, "token_type": "bearer"}
 
-@router_v1.get("/checkTag")
+@router_v1.get("/check_tag")
 async def check_tag(username: str = Depends(vérifier_token), tag: str = Query(..., description="Le tag à vérifier")):
     """Vérifie qu'un tag est éligible à activer
 
     - Exige un en-tête `Authorization: Bearer <token>`.
-    - Accepte le paramètre `tag` dans l'URL (ex: /checkTag?tag=mon_tag).
+    - Accepte le paramètre `tag` dans l'URL (ex: /check_tag?tag=mon_tag).
     - Retourne `{ "result": "OK" }` si le token est valide.
     """
-    
+
     # La variable 'tag' contient directement la valeur passée en paramètre
     logger.info(f"Vérification du tag '{tag}' par l'utilisateur {username}")
-    
+
     return {"result": "OK"}
 
 @router_v1.post("/tag")

@@ -17,7 +17,7 @@ def test_add_and_remove_tag(tmp_path, monkeypatch, tag_value):
     monkeypatch.setenv("DB_DIR", str(db_dir))
 
     # Importer (ou recharger) le module database après avoir défini DB_DIR
-    db_mod = importlib.import_module("nfc_available_rest.database")
+    db_mod = importlib.import_module("tagChecker_rest.database")
     importlib.reload(db_mod)
 
     # Initialiser la base et vérifier l'ajout

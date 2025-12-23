@@ -8,7 +8,7 @@ from pathlib import Path
 # Ajouter le répertoire src au chemin Python
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from nfc_available_rest.app import app
+from tagChecker_rest.app import app
 
 
 @pytest.mark.asyncio
@@ -16,7 +16,7 @@ async def test_login_succès():
     """Teste une authentification réussie avec identifiants valides."""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         response = await ac.post(
-            "/login",
+            "/v1/login",
             json={"username": "Matthieu", "password": "MdP"}
         )
         assert response.status_code == 200
@@ -30,7 +30,7 @@ async def test_login_mot_de_passe_incorrect():
     """Teste une authentification échouée avec mot de passe incorrect."""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         response = await ac.post(
-            "/login",
+            "/v1/login",
             json={"username": "Matthieu", "password": "mauvais_mot_de_passe"}
         )
         assert response.status_code == 401
@@ -42,7 +42,7 @@ async def test_login_utilisateur_inexistant():
     """Teste une authentification échouée avec utilisateur inexistant."""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         response = await ac.post(
-            "/login",
+            "/v1/login",
             json={"username": "utilisateur_inexistant", "password": "password123"}
         )
         assert response.status_code == 401
@@ -54,7 +54,7 @@ async def test_login_avec_user_valide():
     """Teste une authentification réussie avec l'utilisateur 'user'."""
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
         response = await ac.post(
-            "/login",
+            "/v1/login",
             json={"username": "Karine", "password": "MdP"}
         )
         assert response.status_code == 200

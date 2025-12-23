@@ -4,7 +4,7 @@
 	<!-- Demandez le type de projet, le langage et les frameworks s'il n'est pas spécifié. Ignorez si déjà fourni. -->
 
 - [x] Générer l'échafaudage du projet
-  - ✓ Structure créée : `src/nfc_available_rest/`, `tests/`
+  - ✓ Structure créée : `src/tagChecker_rest/`, `tests/`
   - ✓ Fichiers : `pyproject.toml`, `requirements.txt`, `Dockerfile`
   - ✓ Runner : `run.py` (Uvicorn sur port 6543)
 

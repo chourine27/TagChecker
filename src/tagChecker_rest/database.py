@@ -8,7 +8,7 @@ from typing import Optional
 logger = logging.getLogger(__name__)
 
 DB_DIR = os.getenv("DB_DIR", "db")
-DB_PATH = os.path.join(DB_DIR, "nfc_available.db")
+DB_PATH = os.path.join(DB_DIR, "tagChecker.db")
 
 
 def get_connection() -> sqlite3.Connection:
@@ -57,27 +57,33 @@ def tag_exists(tag: str) -> bool:
 
 def add_tag(tag: str) -> bool:
     """Ajoute un tag à la base de données. Retourne True si succès."""
+    conn = get_connection()
     try:
-        conn = get_connection()
         cursor = conn.cursor()
         cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
         conn.commit()
-        conn.close()
         return True
     except sqlite3.IntegrityError as e:
         logger.error(f"Erreur d'intégrité lors de l'ajout du tag '{tag}': le tag existe déjà", exc_info=True)
         return False
+    finally:
+        conn.close()
 
 
 def remove_tag(tag: str) -> bool:
     """Supprime un tag de la base de données. Retourne True si succès."""
     conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("DELETE FROM availableTag WHERE tag = ?", (tag,))
-    conn.commit()
-    rows_deleted = cursor.rowcount
-    conn.close()
-    return rows_deleted > 0
+    try:
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM availableTag WHERE tag = ?", (tag,))
+        conn.commit()
+        rows_deleted = cursor.rowcount
+        return rows_deleted > 0
+    except sqlite3.IntegrityError as e:
+        logger.error(f"Erreur d'intégrité lors de la suppression du tag '{tag}'", exc_info=True)
+        return False
+    finally:
+        conn.close()
 
 
 def list_tags() -> list:

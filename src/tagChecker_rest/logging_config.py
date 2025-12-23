@@ -4,7 +4,7 @@ from logging.handlers import RotatingFileHandler
 
 
 LOG_DIR = os.getenv("LOG_DIR", "logs")
-LOG_FILENAME = os.path.join(LOG_DIR, "nfc_available_rest.log")
+LOG_FILENAME = os.path.join(LOG_DIR, "tagChecker_rest.log")
 
 
 def configure_logging(level: int = logging.INFO, max_bytes: int = 5_000_000, backup_count: int = 5) -> None:
