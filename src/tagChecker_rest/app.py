@@ -13,6 +13,7 @@ from .auth import (
     ACCESS_TOKEN_EXPIRE_MINUTES,
 )
 from .tagManager import TagManager
+from .ewelinkManager import EwelinkManager
 from .logging_config import configure_logging
 
 
@@ -28,6 +29,8 @@ router_v1 = APIRouter(prefix="/v1")
 
 # Initialisation du gestionnaire de tags
 tag_manager = TagManager()
+# Initialisation du gestionnaire eWeLink
+ewelink_manager = EwelinkManager()
 
 
 class Health(BaseModel):
@@ -38,10 +41,17 @@ class Health(BaseModel):
 async def health():
     return {"status": "ok"}
 
+@router_v1.get("/em")
+async def ewelink():
+    logger.info("eWeLink")
+    await ewelink_manager.connecter()
+    return {"status": "ok"}
+
 @router_v1.get("/log")
 async def log_info(text: str = Query(..., description="Le tag à vérifier")):
     logger.info(f"{text}")
     return {"status": "ok"}
+
 
 @router_v1.post("/login", response_model=Token)
 async def login(request: LoginRequest):

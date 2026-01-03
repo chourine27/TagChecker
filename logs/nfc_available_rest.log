@@ -1,3 +1,0 @@
-2025-12-12 07:16:30 [INFO] nfc_available_rest.database: ❌ Le fichier 'db/nfc_available.db' n'existe PAS.
-2025-12-12 07:16:30 [INFO] root: La base de données n'existe pas, initialisation
-2025-12-12 07:16:30 [INFO] nfc_available_rest.database: Base de données initialisée: db/nfc_available.db

@@ -1284,3 +1284,464 @@ sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
 2025-12-23 22:56:06 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
 2025-12-23 22:56:06 [INFO] root: Le tag existe déjà, rien à faire
 2025-12-23 22:56:06 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-23 23:31:05 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-23 23:45:04 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-27 23:00:18 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-27 23:28:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-27 23:28:41 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-27 23:29:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:34 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-27 23:29:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:34 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:34 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-27 23:29:34 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:34 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-27 23:29:34 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-27 23:29:34 [INFO] httpx: HTTP Request: GET http://test/v1/check_tag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-27 23:29:34 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-27 23:29:34 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_add_and_remove_tag_4e56560\db\tagChecker.db
+2025-12-27 23:29:35 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag '4e5656545654': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-27 23:29:35 [INFO] root: Connexion à ewelink en cours...
+2025-12-27 23:29:35 [INFO] root: Connecté à ewelink avec succès.
+2025-12-27 23:29:35 [INFO] root: Récupération de la liste des appareils ewelink...
+2025-12-27 23:29:35 [INFO] root: Appareils récupérés : ['Appareil1', 'Appareil2', 'Appareil3']
+2025-12-27 23:29:35 [INFO] root: Activation de l'appareil device-1...
+2025-12-27 23:29:35 [INFO] root: Appareil device-1 activé avec succès.
+2025-12-27 23:29:35 [INFO] root: Désactivation de l'appareil device-2...
+2025-12-27 23:29:35 [INFO] root: Appareil device-2 désactivé avec succès.
+2025-12-27 23:29:35 [INFO] root: Récupération de l'état de l'appareil device-3...
+2025-12-27 23:29:35 [INFO] root: État de l'appareil device-3 : ON
+2025-12-27 23:29:35 [INFO] root: Connexion à ewelink en cours...
+2025-12-27 23:29:35 [INFO] root: Récupération de l'état de l'appareil device-3...
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:35 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:35 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_nouveau_test_0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_nouveau_test_0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:35 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_existant_dupl0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_existant_dupl0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:35 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:35 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_existant_anot0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_existant_anot0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:35 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:35 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_echec_inserti0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_echec_inserti0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:35 [ERROR] root: Le tag failing_tag n'a pas pu être ajouté
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_supprimer_tag_echec_suppr0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_supprimer_tag_echec_suppr0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] root: Le tag existe, on peut le supprimer
+2025-12-27 23:29:35 [ERROR] root: Le tag failing_tag n'a pas pu être supprimé
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:35 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_inexis0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_inexis0\db\tagChecker.db' existe.
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_exista0\db\tagChecker.db
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-27 23:29:35 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_plusieurs_tags0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:36 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_plusieurs_tags0\db\tagChecker.db
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_vide0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:36 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_vide0\db\tagChecker.db
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_avec_caracter0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:36 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_ajouter_tag_avec_caracter0\db\tagChecker.db
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_logging_ajouter_tag_nouve0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:36 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_logging_ajouter_tag_nouve0\db\tagChecker.db
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_logging_ajouter_tag_exist0\db\tagChecker.db' n'existe PAS.
+2025-12-27 23:29:36 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-27 23:29:36 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-15\test_logging_ajouter_tag_exist0\db\tagChecker.db
+2025-12-27 23:29:36 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-27 23:29:36 [INFO] root: Le tag a été ajouté
+2025-12-27 23:29:36 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-29 09:52:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:02:38 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:39 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 10:02:39 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:39 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:39 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 10:02:39 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:39 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:39 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 10:02:39 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:39 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 10:02:39 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 401 Unauthorized"
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 10:02:39 [INFO] httpx: HTTP Request: GET http://test/v1/check_tag?tag=test "HTTP/1.1 401 Unauthorized"
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_and_remove_tag_tag1_0\db\tagChecker.db
+2025-12-29 10:02:39 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag 'tag1': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_add_and_remove_tag_4e56560\db\tagChecker.db
+2025-12-29 10:02:39 [ERROR] tagChecker_rest.database: Erreur d'intégrité lors de l'ajout du tag '4e5656545654': le tag existe déjà
+Traceback (most recent call last):
+  File "C:\Tools\TagChecker\src\tagChecker_rest\database.py", line 63, in add_tag
+    cursor.execute("INSERT INTO availableTag (tag) VALUES (?)", (tag,))
+sqlite3.IntegrityError: UNIQUE constraint failed: availableTag.tag
+2025-12-29 10:02:39 [INFO] root: Connexion à ewelink en cours...
+2025-12-29 10:02:39 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 10:02:39 [INFO] root: Récupération de la liste des appareils ewelink...
+2025-12-29 10:02:39 [INFO] root: Appareils récupérés : ['Appareil1', 'Appareil2', 'Appareil3']
+2025-12-29 10:02:39 [INFO] root: Activation de l'appareil device-1...
+2025-12-29 10:02:39 [INFO] root: Appareil device-1 activé avec succès.
+2025-12-29 10:02:39 [INFO] root: Désactivation de l'appareil device-2...
+2025-12-29 10:02:39 [INFO] root: Appareil device-2 désactivé avec succès.
+2025-12-29 10:02:39 [INFO] root: Récupération de l'état de l'appareil device-3...
+2025-12-29 10:02:39 [INFO] root: État de l'appareil device-3 : ON
+2025-12-29 10:02:39 [INFO] root: Connexion à ewelink en cours...
+2025-12-29 10:02:39 [INFO] root: Récupération de l'état de l'appareil device-3...
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:39 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_nouveau_tag1_0\db\tagChecker.db
+2025-12-29 10:02:39 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:39 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:39 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:39 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_nouveau_4e5650\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_nouveau_test_0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_nouveau_test_0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_existant_dupl0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_existant_dupl0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_existant_anot0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_existant_anot0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_echec_inserti0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_echec_inserti0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [ERROR] root: Le tag failing_tag n'a pas pu être ajouté
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_supprimer_tag_echec_suppr0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_supprimer_tag_echec_suppr0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: Le tag existe, on peut le supprimer
+2025-12-29 10:02:40 [ERROR] root: Le tag failing_tag n'a pas pu être supprimé
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_inexis0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_inexis0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_inexis0\db\tagChecker.db' existe.
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_exista0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_init_tagmanager_db_exista0\db\tagChecker.db' existe.
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_plusieurs_tags0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_plusieurs_tags0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_vide0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_vide0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_avec_caracter0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_ajouter_tag_avec_caracter0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_logging_ajouter_tag_nouve0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_logging_ajouter_tag_nouve0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_logging_ajouter_tag_exist0\db\tagChecker.db' n'existe PAS.
+2025-12-29 10:02:40 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 10:02:40 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-16\test_logging_ajouter_tag_exist0\db\tagChecker.db
+2025-12-29 10:02:40 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 10:02:40 [INFO] root: Le tag a été ajouté
+2025-12-29 10:02:40 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-29 10:06:29 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:12:25 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:12:26 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:17:01 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:32:43 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:43:13 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:43:14 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:44:05 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:50:38 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:56:37 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:56:37 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:58:57 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:58:57 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:59:04 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:59:49 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 10:59:49 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:00:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:05:09 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:05:09 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:05:35 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:05:35 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:06:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:06:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:07:32 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:07:32 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:08:11 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:08:11 [INFO] httpx: HTTP Request: GET http://test/v1/health "HTTP/1.1 200 OK"
+2025-12-29 11:08:11 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 401 Unauthorized"
+2025-12-29 11:08:11 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-17\test_add_tag_avec_authentifica0\db\tagChecker.db' n'existe PAS.
+2025-12-29 11:08:11 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 11:08:11 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-17\test_add_tag_avec_authentifica0\db\tagChecker.db
+2025-12-29 11:08:11 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 11:08:11 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 11:08:11 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 11:08:11 [INFO] root: Le tag a été ajouté
+2025-12-29 11:08:11 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 11:08:11 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-17\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db' n'existe PAS.
+2025-12-29 11:08:11 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 11:08:11 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-17\test_add_tag_avec_majuscule_Ta0\db\tagChecker.db
+2025-12-29 11:08:12 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 11:08:12 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 11:08:12 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 11:08:12 [INFO] root: Le tag a été ajouté
+2025-12-29 11:08:12 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 11:08:12 [INFO] tagChecker_rest.database: ❌ Le fichier 'C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-17\test_add_tag_deja_existant0\db\tagChecker.db' n'existe PAS.
+2025-12-29 11:08:12 [INFO] root: La base de données n'existe pas, initialisation
+2025-12-29 11:08:12 [INFO] tagChecker_rest.database: Base de données initialisée: C:\Users\ordi2305855\AppData\Local\Temp\pytest-of-ordi2305855\pytest-17\test_add_tag_deja_existant0\db\tagChecker.db
+2025-12-29 11:08:12 [INFO] httpx: HTTP Request: POST http://test/v1/login "HTTP/1.1 200 OK"
+2025-12-29 11:08:12 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 11:08:12 [INFO] root: C'est bon le tag n'existe pas, on peut le créer
+2025-12-29 11:08:12 [INFO] root: Le tag a été ajouté
+2025-12-29 11:08:12 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 11:08:12 [INFO] tagChecker_rest.app: Ajout du tag par l'utilisateur Matthieu
+2025-12-29 11:08:12 [INFO] root: Le tag existe déjà, rien à faire
+2025-12-29 11:08:12 [INFO] httpx: HTTP Request: POST http://test/v1/tag "HTTP/1.1 200 OK"
+2025-12-29 11:45:26 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:45:41 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:46:32 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 11:50:27 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:01:04 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:01:06 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:01:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:01:44 [INFO] tagChecker_rest.app: bing
+2025-12-29 21:03:02 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:04:51 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:05:06 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:05:32 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:05:44 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:06:51 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:07:19 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:11:16 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:12:30 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:12:49 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:14:59 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:15:07 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:15:14 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 21:15:15 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 21:21:31 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:22:01 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:22:22 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:22:29 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 21:23:20 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 21:24:28 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:24:53 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:25:17 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:25:24 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:25:24 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 21:26:50 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 21:27:23 [ERROR] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000024698CFD910>
+2025-12-29 21:30:20 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:30:46 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:30:47 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:30:47 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 21:31:31 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 21:44:10 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:44:32 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:57:18 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:57:39 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 21:57:50 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 21:57:55 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 21:58:36 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 22:00:55 [ERROR] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002A15BA81970>
+2025-12-29 22:00:55 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:00:55 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:01:09 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 22:01:44 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:02:09 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:02:14 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:02:19 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:03:46 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 22:06:57 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:07:19 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:07:40 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:07:45 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:08:02 [INFO] root: Connecté à ewelink avec succès.
+2025-12-29 22:11:10 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:11:34 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:11:50 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:11:58 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:14:20 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:14:47 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:14:56 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:15:02 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:15:59 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:16:26 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:16:33 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:16:40 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:17:09 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:17:14 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:18:57 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:19:26 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:19:33 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 22:19:37 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 22:38:17 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 22:40:42 [INFO] tagChecker_rest.app: ZEZE
+2025-12-29 22:47:45 [INFO] tagChecker_rest.app: ZEZE
+2025-12-29 23:09:32 [INFO] tagChecker_rest.app: truc
+2025-12-29 23:10:31 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:10:56 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:11:14 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 23:11:19 [INFO] root: Conneixon à ewelink en cours...
+2025-12-29 23:30:13 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:30:24 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 23:30:27 [INFO] root: Connexion a sonoff-python en cours...
+2025-12-29 23:31:42 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:32:07 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:32:17 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:32:40 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:32:45 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 23:32:54 [INFO] root: Connexion a sonoff-python en cours...
+2025-12-29 23:33:37 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:34:21 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:34:27 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 23:34:32 [INFO] root: Connexion a sonoff-python en cours...
+2025-12-29 23:36:28 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:36:52 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:37:00 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 23:37:03 [INFO] root: Connexion a sonoff-python en cours...
+2025-12-29 23:44:56 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:45:18 [INFO] tagChecker_rest.database: ✅ Le fichier 'db\tagChecker.db' existe.
+2025-12-29 23:45:25 [INFO] tagChecker_rest.app: eWeLink
+2025-12-29 23:45:28 [INFO] root: Connexion a sonoff-python en cours...
+2025-12-29 23:45:35 [ERROR] root: ❌ Erreur : 'at'

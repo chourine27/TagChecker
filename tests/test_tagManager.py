@@ -88,6 +88,31 @@ def test_ajouter_tag_echec_insertion(tmp_path, monkeypatch):
             assert result is False
 
 
+def test_supprimer_tag_echec_suppression(tmp_path, monkeypatch):
+    """Teste le comportement quand remove_tag Ç¸choue."""
+    # Configurer un dossier de base de donnÇ¸es temporaire
+    db_dir = tmp_path / "db"
+    monkeypatch.setenv("DB_DIR", str(db_dir))
+
+    # Importer (ou recharger) les modules aprÇùs avoir dÇ¸fini DB_DIR
+    db_mod = importlib.import_module("tagChecker_rest.database")
+    importlib.reload(db_mod)
+
+    tag_manager_mod = importlib.import_module("tagChecker_rest.tagManager")
+    importlib.reload(tag_manager_mod)
+
+    # CrÇ¸er une instance de TagManager
+    tag_manager = tag_manager_mod.TagManager()
+
+    # Simuler un Ç¸chec de remove_tag
+    with patch("tagChecker_rest.tagManager.remove_tag", return_value=False):
+        with patch("tagChecker_rest.tagManager.tag_exists", return_value=True):
+            result = tag_manager.supprimer_tag("failing_tag")
+
+            # VÇ¸rifications: doit retourner False en cas d'Ç¸chec
+            assert result is False
+
+
 def test_init_tagmanager_db_inexistante(tmp_path, monkeypatch):
     """Teste l'initialisation de TagManager quand la base de données n'existe pas."""
     # Configurer un dossier de base de données temporaire

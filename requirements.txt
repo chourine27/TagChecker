@@ -2,3 +2,6 @@ fastapi>=0.95
 uvicorn[standard]>=0.22
 pyjwt>=2.8
 python-multipart>=0.0.6
+pysonofflan>=0.3.0
+websockets==11.0.3
+requests>=2.31.0
